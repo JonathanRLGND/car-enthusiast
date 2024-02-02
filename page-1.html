@@ -7,18 +7,47 @@
         <link rel="stylesheet" href="./styling.css">
     </head>
     <body>
-        <div id="navbar">
+        <div class="navbar">
             <nav id="navigation">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Link 1</a></li>
-                    <li><a href="">Link 2</a></li>
-                    <li><a href="">Link 3</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./page-1.html">Survey</a></li>
+                    <li><a href="./page-2.html">Websites</a></li>
+                    <li><a href="./page-3.html">Favorite Cars</a></li>
                 </ul>
             </nav>
         </div>
-        <div id="heading">
-            <h1>Heading 1</h1>
+        <div class="heading">
+            <h1>Tell us about your car</h1>
+        </div>
+        <div class="car-form">
+            <form action="handling" method="post">
+                <fieldset>
+                    <div class="owner-info">
+                        <label for="firstName">First Name:</label>
+                        <input id="firstName" type="text" name="first_name">
+                        <label for="lastName">Last Name:</label>
+                        <input id="lastName" type="text" name="last_name">
+                    </div>
+                    <div class="engine">
+                        <p>Information about your car's engine:</p>
+                        <label for="engineLayout">Engine Layout</label>
+                        <input id="4-cyl" type="checkbox" name="engine-layout"> 4 Cylinder
+                        <input id="inline-6" type="checkbox" name="engine-layout">Inline 6
+                        <input id="v6" type="checkbox" name="engine-layout">V6
+                        <input id="v8" type="checkbox" name="engine-layout">V8
+                        <input id="v10" type="checkbox" name="engine-layout">V10
+                        <input id="v12" type="checkbox" name="engine-layout">V12
+                    </div>
+                    <div class="text-area">
+                        <label for="text-block">What kind of car do you have? What have you done to it?</label>
+                        <textarea id="text-block"></textarea>
+                    </div>
+                    <div class="div-button">
+                        <input id="submit" type="submit" value="Submit">
+                    </div>
+                </fieldset>
+            </form>
         </div>
     </body>
 </html>
